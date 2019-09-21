@@ -2,7 +2,7 @@ language: python
 python:
     - "3.6"
 before_install:
-    - sudo apt-get install libgnutls28-d
+    - sudo apt-get install libgnutls28-dev
 install: "pip install -r requirements.txt"
 script:
     - SECRET_KEY="whatevs" python manage.py test
